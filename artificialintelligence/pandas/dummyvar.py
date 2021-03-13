@@ -1,9 +1,9 @@
 '''
 when dummies are used, for example there are 2 values in sex series, m and f, then original sex series will be replaced by sex_m and sex_f
-and it will contain binary values 0 and 1 only. for the values present 1 will be there
+and it will contain binary values 0 and 1 only. for the values present 1 will be there. (Feature Encoding)
 '''
 import pandas as pd
-data=pd.read_csv("/home/ila/PycharmProjects/pythonworks/artificialintelligence/pandas/files/kaggletrain.txt")
+data=pd.read_csv("files/kaggletrain.txt")
 x=data.iloc[:,0:2]
 y=data.iloc[:,-1]
 data['gender_binary']=data.Sex.map({'female':0,'male':1})

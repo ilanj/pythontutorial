@@ -20,7 +20,7 @@ print(data.describe())#gives count mean std min 25% 50% 75% and max for numeric 
 print("shape",data.shape)
 print("dtypes",data.dtypes)
 #to remove spaces in column names
-data.columns=data.columns.str.replace(" ","")
+data.columns=data.columns.z_str.replace(" ", "")
 print(data.columns)
 print("after removing space",)
 # # print("describe int",data.describe(include=['int64']))#take type from previous using dtypes

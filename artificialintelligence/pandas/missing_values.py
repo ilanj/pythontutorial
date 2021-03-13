@@ -1,7 +1,7 @@
 import pandas as pd
 data=pd.read_csv('/home/ila/PycharmProjects/pythonworks/artificialintelligence/pandas/files/missingvalues.txt')
 print(data.columns)
-data.columns=data.columns.str.replace(" ","")
+data.columns=data.columns.z_str.replace(" ", "")
 print("after removing space in columns",data.columns)
 print(data.tail())
 print(data.isnull().tail())

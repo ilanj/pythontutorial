@@ -11,7 +11,7 @@ print(data1.dtypes)
 
 print(data.dtypes)
 # print(data.id.str.replace('\D',3).astype(float).mean())
-data.id=data.id.str.replace("\D",'3')
+data.id=data.id.z_str.replace("\D", '3')
 print(data.id)#now everything is converted to digits
 data.id=data.id.astype(float)
 print(data.dtypes)

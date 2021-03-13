@@ -1,6 +1,6 @@
 1|24|M|technician|85711
-2|53|F|other|94043
-3|23|M|writer|32067
+2|nan|F|other|94043
+3|null|M|writer|32067
 4|24|M|technician|43537
 5|33|F|other|15213
 6|42|M|executive|98101

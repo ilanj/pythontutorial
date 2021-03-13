@@ -4,17 +4,18 @@ print(type(nos))
 print(type(np.array(nos)))
 print(np.array(nos))
 
-# x=np.ones((3,3))
+x=np.ones((3,3))  #all r and c  as 1
+print(x)
 # x=np.eye(3)
-x=np.eye(4)
+x=np.eye(4)  #diagonals will be 1 and rest as 0
 print(x)
 
-dgnl=np.diag([2,4,6,5,4,7])
+dgnl=np.diag([2,4,6,5,4,7])   #these nos will be in diaonal and rest will be 0's
 print(dgnl)
-print(np.arange(10))
-print(np.arange(10,13))
-print(np.arange(10,100,5))
-print(np.linspace(1,11,21))#takes 20 nos between 1 to 10
+print("np.arrange(10)",np.arange(10))
+print("np.arange(10,13)",np.arange(10,13))
+print("np.arange(10,100,5)",np.arange(10,100,5))
+print(np.linspace(1,10,21))#takes 20 nos between 1 to 10
 
 n=np.arange(12)
 n1=np.reshape(n,(3,4))#exactly reshape with 12 elements

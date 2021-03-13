@@ -1,5 +1,5 @@
 #whether a no is divisible by both/or 3 nd 5
-n=int(input('enter n'))
+n = int(input('enter n'))
 
 if n%3==0 and n%5==0:
     print(n,' is divisible by both 3 and 5')

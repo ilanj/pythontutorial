@@ -17,10 +17,10 @@ print('shape of y=', y.shape)
 
 print('size of y=', y.size)
 print('datatype of y=', y.dtype)
-str = np.array(['hi', 'welcome'])
-print(str)
+z_str = np.array(['hi', 'welcome'])
+print(z_str)
 
-print("str.dtype ",str.dtype)
+print("str.dtype ", z_str.dtype)
 
 nos = np.array([1, 2, 'hi'])
 print("nos.dtype ",nos.dtype)
