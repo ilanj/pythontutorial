@@ -1,10 +1,12 @@
-sq=[]
+sq = list()
 for x in range(10):
     sq.append(x**2)
 print(sq)
 #[expression for (zero or more for or if)]
-even=[(x) for x in sq if x%2==0 ]
+even = [(x) for x in sq if x%2==0 ]
 print(even)
+
+
 
 #the above can be expanded as
 odd=[]

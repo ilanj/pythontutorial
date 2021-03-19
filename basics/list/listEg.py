@@ -1,8 +1,10 @@
 import random
-nos=[]
-rev=[]
+
+nos= []
+rev= list()
 for i in range(1,5):
-    #nos.append(eval(input("enter any input")))
+    # nos.append(eval(input("enter any input")))
+    # nos.append(i)
     nos.append(random.randint(10,99))
 print("sum=",sum(nos))
 print("sum=",sum(nos,20))
@@ -30,3 +32,7 @@ for a in nos:
 
 sorted=list(sorted(nos))
 print("after sort=",sorted)
+nos.append(10)
+nos.append(10)
+nos.append(10)
+print(nos)

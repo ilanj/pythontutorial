@@ -1,4 +1,5 @@
 from oops.class_intro.class_init.class_init import Testing
 
-run = Testing("tested")
+run = Testing(" welcome to class")
 run.printing()
+run.test()

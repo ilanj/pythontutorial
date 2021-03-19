@@ -7,9 +7,15 @@ from multiprocessing import Pool
 
 def f(x):
     time.sleep(2)
+    # if x == 7:
+    #     time.sleep(6)
     return x*x
 
 if __name__ == '__main__':
-    with Pool(8) as p:
-        result = p.map(f, [1, 2, 3, 4, 4 ,6 ,7])
+    nos = [1, 2, 3, 4, 4 ,6,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
+                           4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,
+                           4,4,4,4,4,4,4,4,4,4,4 ]
+    print("list size = ",len(nos))
+    with Pool(60) as p:
+        result = p.map(f, nos)
         print(result)

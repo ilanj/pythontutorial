@@ -1,1 +1,2 @@
-print(list(range(25,1,-1)))
+
+print(list(range(150, 20, -5)))

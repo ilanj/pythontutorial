@@ -2,7 +2,7 @@ import json
 import pprint
 
 student={
-    "name":"Hajara",
+    "name":"bala",
     "id":36,
     43:"check",
     "address":"navalur"

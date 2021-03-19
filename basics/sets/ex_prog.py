@@ -8,6 +8,6 @@ print(char_set)
 print(sum(char_set))
 print(frozenset(sorted(char_set)))
 print(sorted(sorted(char_set)))
-print(reversed((char_set)))#will not work
+# print(reversed((char_set)))#will not work
 
 

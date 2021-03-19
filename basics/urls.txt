@@ -1,2 +1,10 @@
 https://medium.com/python-pandemonium/never-write-for-loops-again-91a5a4c84baf
 https://pythontips.com/2013/08/04/args-and-kwargs-in-python-explained/
+
+https://www.geeksforgeeks.org/differences-and-applications-of-list-tuple-set-and-dictionary-in-python/
+
+list: [1,2,3,4,3,4]  ['a', 'a', 'b']  ["india", "china", "england"] - allows duplication, mutable, maintains insertion order
+set    {1,2,3,4} - duplication is not allowed, mutable, un ordered
+tuples - similar list list. (1,2,3,4,3) - it is immutable
+dictionary - {"india" : "delhi",
+              "tn" : "delhi"} - in key duplication are not allowed. mutable

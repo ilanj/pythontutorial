@@ -2,6 +2,7 @@
 elements={'a','b','c','d'}
 elements.add('e')
 elements.add('a')
+elements.add(78)
 print(elements)
 
 elements.add("new_element")
