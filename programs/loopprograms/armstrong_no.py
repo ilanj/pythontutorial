@@ -4,8 +4,8 @@ n=int(input("enter any no"))
 check_n=n
 armstrong=0
 while n is not 0:
-    rem=n%10
-    n=n//10
+    rem=n % 10
+    n = n // 10
     armstrong=armstrong+(rem**3)
 
 if(check_n is armstrong):

@@ -35,5 +35,5 @@ models.append(('SVC', SVC()))
 for name, model in models:
     model.fit(x, y)
     # x_predict = 7
-    y_predict = model.predict(np.array([[12]]))
+    y_predict = model.predict(np.array([[2.3]]))
     print(name, y_predict)

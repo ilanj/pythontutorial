@@ -1,5 +1,5 @@
 import numpy as np
-nos=[1,2,3,4,5,6]
+nos= [1,2,3,4,5,6]
 print(type(nos))
 print(type(np.array(nos)))
 print(np.array(nos))

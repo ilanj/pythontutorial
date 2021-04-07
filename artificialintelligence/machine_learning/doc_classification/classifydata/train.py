@@ -5,8 +5,8 @@ import numpy as np
 import sklearn
 from sklearn.model_selection import cross_val_score
 from sklearn.datasets import load_files
-from sklearn.externals import joblib
-from sklearn.feature_extraction import stop_words
+import joblib
+from sklearn.feature_extraction._stop_words import ENGLISH_STOP_WORDS
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
@@ -16,6 +16,7 @@ from sklearn.svm import SVC
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
 from artificialintelligence.machine_learning.doc_classification.classifydata.Helper import Test
+from sklearn.feature_extraction.text import CountVectorizer
 
 DATA_DIR = "dataset_5classes"
 
@@ -37,7 +38,10 @@ print("X_train.shape=",len(X_train))
 print("y_train.shape=",y_train.shape)
 check=dict(zip(X_train,y_train))
 
-
+#count vectorizer for BOW, just implemented and not used
+count_vect = CountVectorizer()
+X_train_counts = count_vect.fit_transform(X_train)
+#tfidf -used here
 vectorizer = TfidfVectorizer(stop_words="english", max_features=2000, decode_error="ignore")
 # print("Stop Words=",vectorizer.stop_words_)
 # with open("stopwords.txt") as fptr:
@@ -52,7 +56,7 @@ X_train_vectorized = vectorizer.transform(X_train)
 with open("stopwords.txt", "w") as fptr:
     for word in vectorizer.stop_words_:
         fptr.write(word+" ")
-    for word in stop_words.ENGLISH_STOP_WORDS:
+    for word in ENGLISH_STOP_WORDS:
         fptr.write(word + " ")
 with open("features.txt", "w") as fptr:
     for word in keywords:
@@ -68,7 +72,7 @@ test_doc=testobj.data_for_a_document()
 y_pred = cls.predict(vectorizer.transform(X_test))
 print("accuracy with naive bayes = ",accuracy_score(y_test, y_pred))
 #RandomForest
-clf = clf = RandomForestClassifier()
+clf = RandomForestClassifier()
 clf.fit(vectorizer.transform(X_train), y_train)
 joblib.dump(clf, "" + 'rf_model.h5')
 y_pred = clf.predict(vectorizer.transform(X_test))
