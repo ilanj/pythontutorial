@@ -26,10 +26,6 @@ class Connectmongodb:
         for record in cursor:
             print(record)
 
-
-
-
-
 if __name__ == "__main__":
     db = Connectmongodb()
     db.insert_doc()

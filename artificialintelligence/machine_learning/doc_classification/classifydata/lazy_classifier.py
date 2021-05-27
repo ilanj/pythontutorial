@@ -11,7 +11,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC
 
 
-DATA_DIR = "/home/ila/Documents/dc_classification/DOD8class072120/OCR/"
+DATA_DIR = "/home/ila/Documents/repos/python-works/artificialintelligence/machine_learning/doc_classification/classifydata/dataset_5classes/"
 # DATA_DIR = "/home/ila/Documents/900_docs/ocr_text/"
 
 # data = load_files(DATA_DIR, encoding="utf-8", decode_error="replace")
